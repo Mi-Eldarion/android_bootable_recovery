@@ -242,7 +242,7 @@
 		<template name="page">
 			<background color="%background_color%"/>
 
-			<fill color="%accent_color%">
+			<fill color="%background_color%">
 				<placement x="0" y="0" w="%screen_width%" h="%header_height%"/>
 			</fill>
 
