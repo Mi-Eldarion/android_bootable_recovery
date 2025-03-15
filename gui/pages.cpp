@@ -62,6 +62,7 @@ GUITerminal* term = NULL;
 
 std::map<std::string, PageSet*> PageManager::mPageSets;
 PageSet* PageManager::mCurrentSet;
+PageSet* PageManager::mBaseSet = NULL;
 MouseCursor *PageManager::mMouseCursor = NULL;
 HardwareKeyboard *PageManager::mHardwareKeyboard = NULL;
 bool PageManager::mReloadTheme = false;
@@ -1413,6 +1414,10 @@ int PageManager::LoadPackage(std::string name, std::string package, std::string 
 			LOGERR("Package %s failed to load.\n", name.c_str());
 	}
 
+	// The first successful package we loaded is the base
+	if (mBaseSet == NULL)
+	mBaseSet = mCurrentSet;
+
 	// reset to previous pageset
 	mCurrentSet = pageSet;
 
@@ -1476,6 +1481,8 @@ int PageManager::ReloadPackage(std::string name, std::string package)
 	}
 	if (mCurrentSet == set)
 		SelectPackage(name);
+	if (mBaseSet == set)
+		mBaseSet = mCurrentSet;
 	delete set;
 	GUIConsole::Translate_Now();
 	return 0;
@@ -1492,8 +1499,6 @@ void PageManager::ReleasePackage(std::string name)
 	PageSet* set = (*iter).second;
 	mPageSets.erase(iter);
 	delete set;
-	if (set == mCurrentSet)
-		mCurrentSet = NULL;
 	return;
 }
 
