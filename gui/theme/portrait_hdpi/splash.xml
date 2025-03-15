@@ -5,11 +5,11 @@
 		<author>RennAlt</author>
 		<title>TWRP</title>
 		<description>splash screen</description>
-		<themeversion>2</themeversion>
+		<themeversion>{themeversion}</themeversion>
 	</details>
 
 	<resources>
-		<image name="splashlogo" filename="splash" retainaspect="1"/>
+		<image name="splashlogo" filename="splashlogo" retainaspect="1"/>
 	</resources>
 
 	<variables>
@@ -23,7 +23,6 @@
 				<image resource="splashlogo"/>
 				<placement x="540" y="960" placement="4"/>
 			</image>
-
 		</page>
 	</pages>
 </recovery>
