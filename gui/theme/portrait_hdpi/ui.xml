@@ -2,11 +2,11 @@
 <recovery>
 	<details>
 		<resolution width="1080" height="1920"/>
-		<author>TeamWin</author>
+		<author>RennAlt</author>
 		<title>Backup Naowz</title>
-		<description>Default basic theme</description>
+		<description>kawaii theme</description>
 		<preview>preview.png</preview>
-		<themeversion>{themeversion}</themeversion>
+		<themeversion>2</themeversion>
 	</details>
 
 	<include>
@@ -177,7 +177,7 @@
 		<variable name="navbar_btn_y" value="1856"/>
 		<variable name="keyboard_y" value="1149"/>
 		<variable name="keyboard_terminal_y" value="1053"/>
-		<variable name="background_color" value="#000000"/>
+		<variable name="background_color" value="#121013"/>
 		<variable name="accent_color" value="#F76299"/>
 		<variable name="accent_color_semitransparent" value="#F7629930"/>
 		<variable name="text_color" value="#EEEEEE"/>
