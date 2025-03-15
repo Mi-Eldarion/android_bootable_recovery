@@ -1,9 +1,5 @@
 <?xml version="1.0"?>
 <recovery>
-	<variables>
- 		<variable name="kawaii_color" value="#F4EFF4"/>
- 	</variables>
-
 	<styles>
 		<style name="text_l">
 			<font resource="font_l" color="%text_color%"/>
@@ -203,9 +199,7 @@
 
 			<button style="main_button">
 				<placement x="%indent%" y="%row2a_y%"/>
-				<text color="%kawaii_color%">
-					<text>{@install_btn=Install}</text>
-				</text>
+				<text>{@install_btn=Install}</text>
 				<actions>
 					<action function="queueclear"/>
 					<action function="set">tw_selectimage=0</action>
@@ -215,57 +209,43 @@
 
 			<button style="main_button">
 				<placement x="%center_x%" y="%row2a_y%"/>
-				<text color="%kawaii_color%">
-					<text>{@wipe_btn=Wipe}</text>
-				</text>
+				<text>{@wipe_btn=Wipe}</text>
 				<action function="page">wipe</action>
 			</button>
 
 			<button style="main_button">
 				<placement x="%indent%" y="%row8_y%"/>
-				<text color="%kawaii_color%">
-					<text>{@backup_btn=Backup}</text>
-				</text>
+				<text>{@backup_btn=Backup}</text>
 				<action function="page">backup</action>
 			</button>
 
 			<button style="main_button">
 				<placement x="%center_x%" y="%row8_y%"/>
-				<text color="%kawaii_color%">
-					<text>{@restore_btn=Restore}</text>
-				</text>
+				<text>{@restore_btn=Restore}</text>
 				<action function="page">restore</action>
 			</button>
 
 			<button style="main_button">
 				<placement x="%indent%" y="%row13a_y%"/>
-				<text color="%kawaii_color%">
-					<text>{@mount_btn=Mount}</text>
-				</text>
+				<text>{@mount_btn=Mount}</text>
 				<action function="page">mount</action>
 			</button>
 
 			<button style="main_button">
 				<placement x="%center_x%" y="%row13a_y%"/>
-				<text color="%kawaii_color%">
-					<text>{@settings_btn=Settings}</text>
-				</text>
+				<text>{@settings_btn=Settings}</text>
 				<action function="page">settings</action>
 			</button>
 
 			<button style="main_button">
 				<placement x="%indent%" y="%row19_y%"/>
-				<text color="%kawaii_color%">
-					<text>{@advanced_btn=Advanced}</text>
-				</text>
+				<text>{@advanced_btn=Advanced}</text>
 				<action function="page">advanced</action>
 			</button>
 
 			<button style="main_button">
 				<placement x="%center_x%" y="%row19_y%"/>
-				<text color="%kawaii_color%">
-					<text>{@reboot_btn=Reboot}</text>
-				</text>
+				<text>{@reboot_btn=Reboot}</text>
 				<action function="page">reboot</action>
 			</button>
 		</page>
