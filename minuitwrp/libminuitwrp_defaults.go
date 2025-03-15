@@ -117,7 +117,7 @@ func globalIncludes(ctx android.BaseContext) []string {
 		includes = append(includes, "bootable/recovery/minuitwrp")
 	}
 
-	if getMakeVars(ctx, "TW_INCLUDE_JPEG") != "" {
+	if getMakeVars(ctx, "TW_INCLUDE_JPEG") == "true" {
 		includes = append(includes, "external/jpeg")
 	}
 
@@ -154,7 +154,7 @@ func globalSharedLibs(ctx android.BaseContext) []string {
 		sharedLibs = append(sharedLibs, "android.hardware.vibrator-V2-cpp")
 	}
 
-	if getMakeVars(ctx, "TW_INCLUDE_JPEG") != "" {
+	if getMakeVars(ctx, "TW_INCLUDE_JPEG") == "true" {
 		sharedLibs = append(sharedLibs, "libjpeg")
 	}
 	return sharedLibs
