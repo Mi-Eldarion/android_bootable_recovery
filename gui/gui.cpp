@@ -61,8 +61,6 @@ extern "C"
 #define LOGEVENT(...) do {} while (0)
 #endif
 
-const static int CURTAIN_FADE = 32;
-
 using namespace rapidxml;
 
 // Global values
