@@ -118,7 +118,7 @@ func globalIncludes(ctx android.BaseContext) []string {
 	}
 
 	if getMakeVars(ctx, "TW_INCLUDE_JPEG") == "true" {
-		includes = append(includes, "external/jpeg")
+		includes = append(includes, "external/libjpeg-turbo")
 	}
 
 	return includes
