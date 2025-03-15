@@ -3424,7 +3424,7 @@
 			</button>
 
 			<slider>
-				<text>{@swipe_allow_mod=Swipe to Allow Modifications}</text>
+				<text>{@swipe_allow_mod=Swipe to Get Waifu :v}</text>
 				<actions>
 					<action function="mountsystemtoggle">0</action>
 					<action function="set">tw_page_done=1</action>
