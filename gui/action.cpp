@@ -62,6 +62,8 @@ extern "C" {
 #include "objects.hpp"
 #include "tw_atomic.hpp"
 
+void curtainClose(void);
+
 GUIAction::mapFunc GUIAction::mf;
 std::set<string> GUIAction::setActionsRunningInCallerThread;
 static string zip_queue[10];

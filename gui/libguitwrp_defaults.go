@@ -85,7 +85,7 @@ func copyThemeResources(ctx android.BaseContext, dirs []string, files []string) 
 		}
 	}
 
-	_files := [2]string{"splash.xml", "ui.xml"}
+	_files := [2]string{"ui.xml"}
 	for _, i := range _files {
 		var fontsize int = 0
 		var width int = 0

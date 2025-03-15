@@ -109,15 +109,15 @@ void rapidxml::parse_error_handler(const char *what, void *where)
 }
 
 static void curtainSet()
- {
+{
  	gr_color(0, 0, 0, 255);
  	gr_fill(0, 0, gr_fb_width(), gr_fb_height());
  	gr_blit(gCurtain, 0, 0, gr_get_width(gCurtain), gr_get_height(gCurtain), TW_X_OFFSET, TW_Y_OFFSET);
  	gr_flip();
- }
+}
  
- static void curtainRaise(gr_surface surface)
- {
+static void curtainRaise(gr_surface surface)
+{
  	int sy = 0;
  	int h = gr_get_height(gCurtain) - 1;
  	int w = gr_get_width(gCurtain);
@@ -138,11 +138,11 @@ static void curtainSet()
  	}
  	gr_blit(surface, 0, 0, msw, msh, 0, 0);
  	flip();
- }
+}
  
- void curtainClose()
- {
- #if 0
+void curtainClose()
+{
+#if 0
  	int w = gr_get_width(gCurtain);
  	int h = 1;
  	int sy = gr_get_height(gCurtain) - 1;
@@ -176,11 +176,11 @@ static void curtainSet()
  		gr_fill(0, 0, gr_fb_width(), gr_fb_height());
  		gr_flip();
  	}
- #else
+#else
  	gr_blit(gCurtain, 0, 0, gr_get_width(gCurtain), gr_get_height(gCurtain), 0, 0);
  	gr_flip();
- #endif
- }
+#endif
+}
 
 class InputHandler
 {
