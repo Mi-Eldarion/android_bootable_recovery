@@ -36,12 +36,6 @@
 			<image checked="checkbox_true" unchecked="checkbox_false"/>
 		</style>
 
-		<style name="button">
-			<highlight color="%highlight_color%"/>
-			<font resource="font_l"/>
-			<image resource="main_button"/>
-		</style>
-
 		<style name="main_button">
 			<highlight color="%highlight_color%"/>
 			<font resource="font_l" color="%text_button_color%"/>
@@ -207,7 +201,7 @@
 				<text>Hi, nice to meet you</text>
 			</text>
 
-			<button style="button">
+			<button style="main_button">
 				<placement x="%indent%" y="%row2a_y%"/>
 				<text color="%kawaii_color%">
 					<text>{@install_btn=Install}</text>
@@ -219,7 +213,7 @@
 				</actions>
 			</button>
 
-			<button style="button">
+			<button style="main_button">
 				<placement x="%center_x%" y="%row2a_y%"/>
 				<text color="%kawaii_color%">
 					<text>{@wipe_btn=Wipe}</text>
@@ -227,7 +221,7 @@
 				<action function="page">wipe</action>
 			</button>
 
-			<button style="button">
+			<button style="main_button">
 				<placement x="%indent%" y="%row8_y%"/>
 				<text color="%kawaii_color%">
 					<text>{@backup_btn=Backup}</text>
@@ -235,7 +229,7 @@
 				<action function="page">backup</action>
 			</button>
 
-			<button style="button">
+			<button style="main_button">
 				<placement x="%center_x%" y="%row8_y%"/>
 				<text color="%kawaii_color%">
 					<text>{@restore_btn=Restore}</text>
@@ -243,7 +237,7 @@
 				<action function="page">restore</action>
 			</button>
 
-			<button style="button">
+			<button style="main_button">
 				<placement x="%indent%" y="%row13a_y%"/>
 				<text color="%kawaii_color%">
 					<text>{@mount_btn=Mount}</text>
@@ -251,7 +245,7 @@
 				<action function="page">mount</action>
 			</button>
 
-			<button style="button">
+			<button style="main_button">
 				<placement x="%center_x%" y="%row13a_y%"/>
 				<text color="%kawaii_color%">
 					<text>{@settings_btn=Settings}</text>
@@ -259,7 +253,7 @@
 				<action function="page">settings</action>
 			</button>
 
-			<button style="button">
+			<button style="main_button">
 				<placement x="%indent%" y="%row19_y%"/>
 				<text color="%kawaii_color%">
 					<text>{@advanced_btn=Advanced}</text>
@@ -267,7 +261,7 @@
 				<action function="page">advanced</action>
 			</button>
 
-			<button style="button">
+			<button style="main_button">
 				<placement x="%center_x%" y="%row19_y%"/>
 				<text color="%kawaii_color%">
 					<text>{@reboot_btn=Reboot}</text>
